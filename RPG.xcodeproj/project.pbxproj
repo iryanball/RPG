@@ -12,6 +12,9 @@
 		1E28097C1D06DE950004B0DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E28097A1D06DE950004B0DA /* Main.storyboard */; };
 		1E28097E1D06DE950004B0DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E28097D1D06DE950004B0DA /* Assets.xcassets */; };
 		1E2809811D06DE950004B0DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E28097F1D06DE950004B0DA /* LaunchScreen.storyboard */; };
+		1E6D616E1D0838E10033E5FF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D616D1D0838E10033E5FF /* Character.swift */; };
+		1E6D61701D0841000033E5FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D616F1D0841000033E5FF /* Player.swift */; };
+		1E6D61721D084BF10033E5FF /* BGMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1E6D61711D084BF10033E5FF /* BGMusic.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		1E28097D1D06DE950004B0DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E2809801D06DE950004B0DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E2809821D06DE950004B0DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E6D616D1D0838E10033E5FF /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		1E6D616F1D0841000033E5FF /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		1E6D61711D084BF10033E5FF /* BGMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGMusic.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,11 @@
 		1E2809751D06DE950004B0DA /* RPG */ = {
 			isa = PBXGroup;
 			children = (
+				1E6D61711D084BF10033E5FF /* BGMusic.mp3 */,
 				1E2809761D06DE950004B0DA /* AppDelegate.swift */,
 				1E2809781D06DE950004B0DA /* ViewController.swift */,
+				1E6D616D1D0838E10033E5FF /* Character.swift */,
+				1E6D616F1D0841000033E5FF /* Player.swift */,
 				1E28097A1D06DE950004B0DA /* Main.storyboard */,
 				1E28097D1D06DE950004B0DA /* Assets.xcassets */,
 				1E28097F1D06DE950004B0DA /* LaunchScreen.storyboard */,
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					1E2809721D06DE950004B0DA = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8GT4MJG4L6;
 					};
 				};
 			};
@@ -125,6 +135,7 @@
 				1E2809811D06DE950004B0DA /* LaunchScreen.storyboard in Resources */,
 				1E28097E1D06DE950004B0DA /* Assets.xcassets in Resources */,
 				1E28097C1D06DE950004B0DA /* Main.storyboard in Resources */,
+				1E6D61721D084BF10033E5FF /* BGMusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E6D61701D0841000033E5FF /* Player.swift in Sources */,
+				1E6D616E1D0838E10033E5FF /* Character.swift in Sources */,
 				1E2809791D06DE950004B0DA /* ViewController.swift in Sources */,
 				1E2809771D06DE950004B0DA /* AppDelegate.swift in Sources */,
 			);
@@ -251,6 +264,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ryan Ball (N3FZM3M4D6)";
 				INFOPLIST_FILE = RPG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ryanball.RPG;
@@ -262,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ryan Ball (N3FZM3M4D6)";
 				INFOPLIST_FILE = RPG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ryanball.RPG;
@@ -288,6 +303,7 @@
 				1E2809871D06DE950004B0DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
