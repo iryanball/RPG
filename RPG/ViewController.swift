@@ -27,6 +27,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var player2AttackLabel: UILabel!
     
+    @IBOutlet weak var player1Character: UIImageView!
+    
+    @IBOutlet weak var player2Character: UIImageView!
+    
+    
+    
     var bgMusic: AVAudioPlayer!
     
     var player1: Player!
@@ -58,10 +64,18 @@ class ViewController: UIViewController {
     @IBAction func player1AttackButton(button: UIButton!) {
         
         if player2.attemptedAttack(Int(arc4random_uniform(20))) {
-            attackLabel.text = "Attacked \(player2.name) for \(player1.attackPwr) HP"
+            attackLabel.text = "\(player1.name) Attacked \(player2.name) for \(player1.attackPwr) HP"
             player2HpLabel.text = "\(player2.hp) HP"
         } else {
             attackLabel.text = "Attack was unsuccessful!"
+        }
+        
+        if !player2.isAlive {
+            player2HpLabel.text = ""
+            attackLabel.text = "\(player1.name) Killed \(player2.name)"
+            player2Character.hidden = true
+            winnerLabel.text = "Congratulations \(player1.name)"
+            winnerLabel.hidden = false
         }
 //        player2Button.hidden = true
 //        player2AttackLabel.hidden = true
@@ -71,12 +85,19 @@ class ViewController: UIViewController {
     @IBAction func player2AttackButton(button: UIButton!) {
         
         if player1.attemptedAttack(Int(arc4random_uniform(20))) {
-            attackLabel.text = "Attacked \(player1.name) for \(player2.attackPwr) HP"
+            attackLabel.text = "\(player2.name) Attacked \(player1.name) for \(player2.attackPwr) HP"
             player1HpLabel.text = "\(player1.hp) HP"
         } else {
             attackLabel.text = "Attack was unsuccessful!"
         }
-        
+        if !player1.isAlive {
+            player1HpLabel.text = ""
+            attackLabel.text = "\(player2.name) Killed \(player1.name)"
+            player1Character.hidden = true
+            winnerLabel.text = "Congratulations \(player2.name)"
+            winnerLabel.hidden = false
+        }
+
     }
     
     func playSound() {

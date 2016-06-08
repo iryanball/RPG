@@ -104,7 +104,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="z5v-fR-Gij"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -169,9 +169,11 @@
                         <outlet property="attackLabel" destination="PNj-Lf-yOy" id="Vn3-U7-x9d"/>
                         <outlet property="player1AttackLabel" destination="yeA-75-b3F" id="vuE-Gv-mZM"/>
                         <outlet property="player1Button" destination="0JY-Fm-2MX" id="val-WK-VaR"/>
+                        <outlet property="player1Character" destination="Nxa-Uc-O7e" id="zMZ-UI-5Dc"/>
                         <outlet property="player1HpLabel" destination="dCn-n3-7gr" id="lwj-m7-Uou"/>
                         <outlet property="player2AttackLabel" destination="hxo-oG-sXv" id="S4Q-kd-ZVx"/>
                         <outlet property="player2Button" destination="Zen-Lg-aQG" id="EV2-ne-AHL"/>
+                        <outlet property="player2Character" destination="oh6-2r-zzJ" id="DPK-He-oCr"/>
                         <outlet property="player2HpLabel" destination="3rE-lg-Ve9" id="AxY-RC-vM1"/>
                         <outlet property="winnerLabel" destination="KFA-Ri-nEA" id="xPm-Mv-dww"/>
                     </connections>
